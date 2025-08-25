@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find My Money - Track Your Expenses and Achieve Financial Freedom</title>
+  <meta name="description"
+    content="Find My Money helps you track your spending, identify wasteful expenses, and achieve your financial goals. Get started today!">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Find My Money - Track Your Expenses and Achieve Financial Freedom">
+  <meta property="og:description"
+    content="Find My Money helps you track your spending, identify wasteful expenses, and achieve your financial goals. Get started today!">
+  <meta property="og:url" content="https://findmymoney.example.com">
+  <meta property="og:image" content="https://findmymoney.example.com/og-image.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Find My Money - Track Your Expenses and Achieve Financial Freedom">
+  <meta property="twitter:description"
+    content="Find My Money helps you track your spending, identify wasteful expenses, and achieve your financial goals. Get started today!">
+  <meta property="twitter:url" content="https://findmymoney.example.com">
+  <meta property="twitter:image" content="https://findmymoney.example.com/og-image.jpg">
+
+
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#6366F1', // Indigo-500 from Tailwind
+            secondary: '#A855F7', // Purple-500 from Tailwind
+            accent: '#3B82F6',   // Blue-500 from Tailwind
+            neutral: '#F3F4F6',   // Gray-100 from Tailwind
+          },
+        },
+      },
+    }
+  </script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- JSON-LD schema.org markup for Google -->
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "name": "Find My Money",
+      "url": "https://findmymoney.example.com",
+      "logo": "https://findmymoney.example.com/logo.png",
+      "description": "Find My Money helps you track your spending, identify wasteful expenses, and achieve your financial goals.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Main Street",
+        "addressLocality": "Anytown",
+        "addressRegion": "CA",
+        "postalCode": "91234",
+        "addressCountry": "US"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "telephone": "+1-555-123-4567",
+        "email": "support@findmymoney.example.com"
+      },
+      "sameAs": [
+        "https://www.facebook.com/findmymoney",
+        "https://twitter.com/findmymoney"
+      ]
+    }
+  </script>
+</head>
+
+<body class="bg-neutral font-sans">
+
+  <!-- Sticky Navigation Header -->
+  <header role="banner" class="sticky top-0 z-50 bg-white shadow-md" aria-label="Main Navigation">
+    <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between py-4">
+        <div class="flex items-center">
+          <span class="text-2xl font-bold text-primary">Find My Money</span>
+        </div>
+        <div class="hidden md:flex space-x-6">
+          <a href="#about" class="text-gray-700 hover:text-primary transition-colors duration-300">About</a>
+          <a href="#features" class="text-gray-700 hover:text-primary transition-colors duration-300">Features</a>
+          <a href="#benefits" class="text-gray-700 hover:text-primary transition-colors duration-300">Benefits</a>
+          <a href="#faq" class="text-gray-700 hover:text-primary transition-colors duration-300">FAQ</a>
+        </div>
+        <a href="#contact"
+          class="bg-primary text-white px-5 py-2 rounded-md hover:bg-secondary transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50">Get
+          Started</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="py-16 md:py-24 bg-gradient-to-br from-blue-100 to-purple-50" aria-label="Hero Section">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-800 mb-6">
+        Track Your Expenses, Achieve Your Goals
+      </h1>
+      <p class="text-lg text-gray-600 mb-8">
+        Take control of your finances with Find My Money. Understand where your money is going and start saving today.
+      </p>
+      <a href="#contact"
+        class="inline-block bg-primary text-white px-8 py-3 rounded-md text-lg hover:bg-secondary transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50">Start
+        Saving Now</a>
+    </div>
+  </section>
+
+  <!-- Social Proof Badges -->
+  <section class="py-8 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-wrap justify-around items-center">
+        <img src="https://via.placeholder.com/120x40" alt="Trusted By Brand 1" class="h-10 w-auto grayscale opacity-70">
+        <img src="https://via.placeholder.com/120x40" alt="Trusted By Brand 2" class="h-10 w-auto grayscale opacity-70">
+        <img src="https://via.placeholder.com/120x40" alt="Trusted By Brand 3" class="h-10 w-auto grayscale opacity-70">
+        <img src="https://via.placeholder.com/120x40" alt="Trusted By Brand 4" class="h-10 w-auto grayscale opacity-70">
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Grid -->
+  <section id="features" class="py-16 bg-white" aria-label="Features">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Key Features</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+          <h3 class="text-xl font-semibold text-gray-700 mb-2">Expense Tracking</h3>
+          <p class="text-gray-600">Automatically track your expenses and income from all your accounts.</p>
+        </div>
+        <div class="p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+          <h3 class="text-xl font-semibold text-gray-700 mb-2">Budgeting Tools</h3>
+          <p class="text-gray-600">Create budgets and track your progress towards your financial goals.</p>
+        </div>
+        <div class="p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+          <h3 class="text-xl font-semibold text-gray-700 mb-2">Spending Insights</h3>
+          <p class="text-gray-600">Get detailed insights into your spending habits and identify areas for improvement.</p>
+        </div>
+        <div class="p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+          <h3 class="text-xl font-semibold text-gray-700 mb-2">Goal Setting</h3>
+          <p class="text-gray-600">Set financial goals and track your progress towards achieving them.</p>
+        </div>
+        <div class="p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+          <h3 class="text-xl font-semibold text-gray-700 mb-2">Reporting & Analytics</h3>
+          <p class="text-gray-600">Generate reports and analyze your financial data to make informed decisions.</p>
+        </div>
+        <div class="p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+          <h3 class="text-xl font-semibold text-gray-700 mb-2">Secure & Private</h3>
+          <p class="text-gray-600">Your financial data is safe and secure with our advanced security measures.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section id="benefits" class="py-16 bg-neutral" aria-label="Benefits">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Unlock Your Financial Potential</h2>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div>
+          <img src="https://via.placeholder.com/600x400" alt="Financial Freedom" class="rounded-lg shadow-md">
+        </div>
+        <div>
+          <ul class="space-y-4">
+            <li class="flex items-start">
+              <div class="flex-shrink-0">
+                <svg class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                  aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
+              <div class="ml-3">
+                <h3 class="text-lg font-semibold text-gray-700">Gain Financial Clarity</h3>
+                <p class="text-gray-600">Understand where your money is going and make informed financial decisions.</p>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <div class="flex-shrink-0">
+                <svg class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                  aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
+              <div class="ml-3">
+                <h3 class="text-lg font-semibold text-gray-700">Save Money Effortlessly</h3>
+                <p class="text-gray-600">Identify areas where you can save money and automate your savings process.</p>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <div class="flex-shrink-0">
+                <svg class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                  aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
+              <div class="ml-3">
+                <h3 class="text-lg font-semibold text-gray-700">Achieve Your Financial Goals</h3>
+                <p class="text-gray-600">Set goals and track your progress towards achieving financial freedom.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Use-Case Cards -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Who is Find My Money For?</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+          <h3 class="text-xl font-semibold text-gray-700 mb-2">Students</h3>
+          <p class="text-gray-600">Track your spending and budget effectively while in school.</p>
+        </div>
+        <div class="p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+          <h3 class="text-xl font-semibold text-gray-700 mb-2">Young Professionals</h3>
+          <p class="text-gray-600">Manage your finances and build a strong financial foundation.</p>
+        </div>
+        <div class="p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+          <h3 class="text-xl font-semibold text-gray-700 mb-2">Families</h3>
+          <p class="text-gray-600">Collaboratively manage your household expenses and savings.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Slider (Static HTML) -->
+  <section class="py-16 bg-neutral">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">What Our Users Are Saying</h2>
+      <div class="relative">
+        <div class="overflow-hidden rounded-lg">
+          <div class="transition-transform duration-500">
+            <div class="p-8 text-center">
+              <p class="text-lg italic text-gray-700 mb-4">"Find My Money has helped me save so much money! I highly
+                recommend it."</p>
+              <p class="font-semibold text-gray-800">Jane Doe</p>
+              <p class="text-gray-600">Student</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Accordion -->
+  <section id="faq" class="py-16 bg-white" aria-label="Frequently Asked Questions">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Frequently Asked Questions</h2>
+      <div class="space-y-4">
+        <div class="border rounded-lg shadow-sm">
+          <button
+            class="flex items-center justify-between w-full p-4 text-left text-gray-700 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50"
+            aria-expanded="false">
+            <span>Is Find My Money secure?</span>
+            <svg class="h-5 w-5 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div class="p-4 text-gray-600 hidden">
+            Yes, we use industry-leading security measures to protect your financial data.
+          </div>
+        </div>
+        <div class="border rounded-lg shadow-sm">
+          <button
+            class="flex items-center justify-between w-full p-4 text-left text-gray-700 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50"
+            aria-expanded="false">
+            <span>How much does Find My Money cost?</span>
+            <svg class="h-5 w-5 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div class="p-4 text-gray-600 hidden">
+            We offer a free plan with basic features, and a premium plan with advanced features for a monthly fee.
+          </div>
+        </div>
+        <div class="border rounded-lg shadow-sm">
+          <button
+            class="flex items-center justify-between w-full p-4 text-left text-gray-700 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50"
+            aria-expanded="false">
+            <span>Can I connect multiple bank accounts?</span>
+            <svg class="h-5 w-5 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div class="p-4 text-gray-600 hidden">
+            Yes, you can connect multiple bank accounts to track all your finances in one place.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section id="contact" class="py-16 bg-gradient-to-r from-primary to-secondary text-white text-center" aria-label="Contact Us">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold mb-8">Ready to Take Control of Your Finances?</h2>
+      <p class="text-lg mb-8">Sign up today and start saving money with Find My Money!</p>
+      <form class="max-w-md mx-auto">
+        <div class="mb-4">
+            <input type="email" class="w-full px-4 py-2 rounded-md text-gray-700 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-opacity-50" placeholder="Enter your email">
+        </div>
+        <button type="submit" class="bg-accent text-white px-8 py-3 rounded-md text-lg hover:bg-blue-600 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-opacity-50">Get Started for Free</button>
+    </form>
+    </div>
+  </section>
+
+  <!-- Footer with Links -->
+  <footer class="bg-gray-800 text-white py-8" aria-label="Footer">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <p class="text-sm">&copy; 2023 Find My Money. All rights reserved.</p>
+        <div class="mt-4 md:mt-0">
+          <a href="#" class="text-gray-300 hover:text-white mr-4">Privacy Policy</a>
+          <a href="#" class="text-gray-300 hover:text-white mr-4">Terms of Service</a>
+          <a href="#" class="text-gray-300 hover:text-white">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
